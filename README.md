@@ -1,8 +1,23 @@
-# kjv [![AUR](https://img.shields.io/badge/AUR-kjv--git-blue.svg)](https://aur.archlinux.org/packages/kjv-git/)
+# chav
 
-Read the Word of God from your terminal
+CHapter And Verse: A fork of Bontibon's kjv terminal viewer for the KJV bible
 
-## Usage
+## Goal
+
+View versified texts from the command line. Planned additional features:
+
+* User selectable source text
+* Support for both verse-per-line view or multi-verse lines with line break flags in the source text
+* Support for footnotes
+
+## Todo
+
+* Change kjv references to chav
+* Allow for CHAV_TEXTS path for text sources; rather than internal tsv file
+* Implement alternative multi-verse per line view option
+* Implement footnotes functionality
+
+## Existing Usage
 
     usage: ./kjv [flags] [reference...]
 
@@ -31,9 +46,9 @@ Read the Word of God from your terminal
           <Book>:<Chapter>/<Search>
               All verses in a chapter of a book that match a pattern
 
-## Build
+## Current Build Instructions
 
-kjv can be built by cloning the repository and then running make:
+Clone the repository and then run make:
 
     git clone https://github.com/bontibon/kjv.git
     cd kjv
